@@ -18,8 +18,8 @@
 % character encoding
 \usepackage[utf8x]{inputenc}                  
 
-\usepackage{tgpagella}
-\renewcommand{\sfdefault}{\rmdefault}
+%\usepackage{tgpagella}
+%\renewcommand{\sfdefault}{\rmdefault}
 
 \definecolor{lightgreen}{rgb}{0.7,1,0.7}
 
@@ -62,7 +62,7 @@
 \firstname{PrithviRaj}
 \familyname{Narendra}
 \title{Curriculum Vitae}               % optional, remove the line if not wanted
-%\address{<Address Street>}{<Addres Place>}    % optional, remove the line if not wanted
+\address{Ringslebenstrasse 2}{Berlin 12353, Germany}    % optional, remove the line if not wanted
 \mobile{+49-15758311202}                    % optional, remove the line if not wanted
 %\phone{<Phone number>}                      % optional, remove the line if not wanted
 %\fax{<Fax number>}                          % optional, remove the line if not wanted
@@ -73,6 +73,9 @@
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
+
+\newcommand{\leftRatingIndent}{45ex}
+\newcommand{\rightRatingIndent}{105ex}
 
 %----------------------------------------------------------------------------------
 %            content
@@ -90,13 +93,20 @@
 %Section
 \section{\textbf{Skills}} 
 \subsection{Hardware}
-\cvcomputer{PCB Design}{KiCad, GeDA, Eagle, OrCAD, Altium} {Hands-On}{SMD soldering, analog \& digital debugging}
+\cvcomputer{PCB Design}{GeDA, Eagle, OrCAD, KiCad, Altium} {Electronics}{Circuit Design \tab{\rightRatingIndent}{\large \textcolor{color1}{•••••}}
+	\newline Digital Design \tab{\rightRatingIndent}{\large \textcolor{color1}{••••}\textcolor{lightgreen}{•}}
+	\newline Analog Design \tab{\rightRatingIndent}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}}
+\vspace{-15px}
+\cvcomputer{Hands-On}{SMD soldering, analog \& digital debugging} {}{}
 \subsection{Software}
-\cvcomputer{Languages}{C, Embedded-C \tab{43ex}{\large \textcolor{color1}{•••••}}
-	 \newline Python, bash scripting \tab{43ex}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}
-	 \newline HTML, Java, C\# \tab{43ex}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}} {Protocols}{BLE, I2C, UART, SPI \tab{100ex}{\large \textcolor{color1}{•••••}}
-	 \newline CAN, Ethernet \tab{100ex}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}
-	 \newline USB, 6LowPAN \tab{100ex}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}}
+
+\cvcomputer{Languages}{C, Embedded-C \tab{\leftRatingIndent}{\large \textcolor{color1}{•••••}}
+	 \newline Python, bash scripting \tab{\leftRatingIndent}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}
+	 \newline HTML, Java, C\# \tab{\leftRatingIndent}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}} 
+	{Protocols}{BLE, I2C, UART, SPI \tab{\rightRatingIndent}{\large \textcolor{color1}{•••••}}
+	 \newline CAN, Ethernet \tab{\rightRatingIndent}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}
+	 \newline USB, 6LowPAN \tab{\rightRatingIndent}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}}
+
 \cvcomputer{Tools}{Eclipse, GCC, Keil, IAR, Android Studio, Git, Doxygen, \LaTeX}  {Know-how}{$\mu$C optimized coding, sensor/actuator interfacing, power optimization, algorithm to embedded firmware development }
 
 %Section
@@ -113,15 +123,15 @@
 \cventry{Sep 2013 -- Jan 2014}{Member, MicroGrid Project 2013}{\href{https://tta-portal.misc.kth.se/microgrid}{Technology Transfer Alliance}}{KTH}{Stockholm}{In this project we designed a 2nd generation a MicroGrid network intended to create a local power network in rural and remote regions. This network consisted of a central server managing an efficient MicroGrid of distributed DC-DC converters nodes with CoAP messages. The function of these node units running on Contiki-OS was to keep the voltage steady within the central grid while using heterogeneous power sources such as solar energy, batteries and super-capacitors.}
 
 \subsection{Projects}
-\cventry{Aug 2010 -- June 2011}{Team Leader}{\href{http://www.teamstudsat.in/}{Project STUDSAT-2}}{Bangalore}{}{As team leader of STUDSAT-2 I had both technical and management roles. My major tasks included conducting management meets, recruiting students, preparing the project timeline and presenting in various organizations to raise funds for the project. My technical work was focused on the use of Real Time Operating System's (FREE-RTOS) features for satellite applications and developing a prototype of the checkout system. In addition, I led the process of analyzing and selecting the payload and core controller for the satellite and interfacing the on and off chip peripherals.}
+\cventry{Aug 2010 -- June 2011}{Team Leader}{\href{http://www.teamstudsat.in/}{Project STUDSAT-2}}{Bangalore}{}{STUDSAT-2 is the 2\textsuperscript{nd} generation satellite project by students from many colleges across India. As team leader of STUDSAT-2, I had both technical and management roles. My major tasks included conducting management meets, recruiting students, preparing the project timeline and presenting in various organizations to raise funds for the project. My technical work was focused on the use of Real Time Operating System's (FREE-RTOS) features for satellite applications and developing a prototype of the checkout system. In addition, I led the process of analyzing and selecting the payload and core controller for the satellite and interfacing the on and off chip peripherals.}
 
-\cventry{Feb 2009 -- June 2010}{Team Member}{\href{http://www.teamstudsat.in/}{Project STUDSAT-1}}{Bangalore}{}{I developed the electronics and software for the CMOS camera payload for this nano-satellite, using a 0.3 Mega-Pixel Monochrome Kodak sensor to take images of 95 m resolution. I also was part of the team that developed a simple scheduler based Operating System for the satellite.} % arguments 3 to 6 are optional
+\cventry{Feb 2009 -- June 2010}{Team Member}{\href{http://www.teamstudsat.in/}{Project STUDSAT-1}}{Bangalore}{}{In this project, I developed the electronics and software for the CMOS camera payload for this nano-satellite, using a 0.3 Mega-Pixel Monochrome Kodak sensor to take images of 95 m resolution. I also was part of the team that developed a simple scheduler based Operating System for the satellite.} % arguments 3 to 6 are optional
 
 %Section
 \section{\textbf{Education}}
 \cventry{Sep 2012 -- Sep 2014}{\href{http://www.masterschool.eitictlabs.eu/}{Masters in EIT ICT Labs Master School}}{}{\newline Major in \emph{\href{http://www.masterschool.eitictlabs.eu/programmes/es/}{Embedded Systems}}, Minor in \emph{\href{http://www.masterschool.eitictlabs.eu/programmes/minor/}{Innovation and Entrepreneurship}}}{}{Year 1: \emph{\href{http://tue.nl/}{Technische Universiteit Eindhoven}}, Einhoven, Netherlands\newline Year 2: \emph{\href{https://www.kth.se/en}{KTH Royal Institute of Technology}}, Stockholm, Sweden} % arguments 3 to 6 are optional
 
-\cventry{Sep 2007 -- May 2011}{Bachelors in Electronics and Communication}{\href{http://rvce.edu.in/}{RV College of Engineering}}{Banglaore}{}{Best Outgoing Student Award from the Electronics \& Communication Dept. for the 2007-11 batch} % arguments 3 to 6 are optional
+\cventry{Sep 2007 -- May 2011}{Bachelors in Electronics and Communication}{\href{http://rvce.edu.in/}{RV College of Engineering}}{Banglaore}{}{Best Outgoing Student Award from the Electronics \& Communication Dept. for the 2007-11 batch.} % arguments 3 to 6 are optional
 
 %Section
 \section{\textbf{Additional Experience/Volunteer}}
@@ -129,7 +139,7 @@
 
 \cventry{Sep 2009 -- May   2010}{Secretary}{IEEE RVCE Chapter}{}{}{Apart from being a secretary, I was organized paper presentations and robotics workshops}
 
-\cventry{}{Volunteer/Member}{Miscellaneous groups and organizations}{}{}{Was secretary at SCIFI, TU Eindhovem for 6 months; volunteered for 8 months at a NGO to help children at a school for visually impaired; organized many events in a student group called 'Geekopreneurs' in KTH for 6 months}
+\cventry{}{Volunteer/Member}{Miscellaneous groups and organizations}{}{}{Was secretary at SCIFI, TU Eindhovem for 6 months; volunteered for 8 months at a NGO to help children at a school for visually impaired; organized many events in a student group called `Geekopreneurs' in KTH for 6 months.}
 
 \section{\textbf{Interests and Hobbies}}
 \cvline{}{Playing badminton, following technological updates, watching TED and other talks which makes me ponder, listening to music, reading fiction, watching movies, trekking, and traveling.}
