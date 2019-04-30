@@ -24,8 +24,7 @@
 \definecolor{lightgreen}{rgb}{0.7,1,0.7}
 
 \usepackage{eso-pic}
-\AddToShipoutPictureBG{%
-	\AtPageLowerLeft{ \includegraphics[scale=0.6]{PCB_corner.pdf}}}
+
 
 
 \usepackage[savepos]{zref}% http://ctan.org/pkg/zref
@@ -48,7 +47,7 @@
 % required when changes are made to page layout lengths
 
 \fancyfoot{} % clear all footer fields
-\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+
 \fancyfoot[RE,LO]{\footnotesize } % other info in "inner" position of footer line
 
 \renewcommand*{\quotestyle}[1]{{\quotefont\textcolor{color0}{#1}}}
@@ -61,15 +60,15 @@
 % personal data
 \firstname{PrithviRaj}
 \familyname{Narendra}
-\title{Curriculum Vitae}               % optional, remove the line if not wanted
-\address{Bengaluru}{}    % optional, remove the line if not wanted
+
+\address{Bengaluru, India}{}    % optional, remove the line if not wanted
 \mobile{+91-9886535655}                    % optional, remove the line if not wanted
 %\phone{<Phone number>}                      % optional, remove the line if not wanted
 %\fax{<Fax number>}                          % optional, remove the line if not wanted
 \email{prithvi@appiko.org}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 %\photo[84pt]{placeholder.jpg}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
-\quote{I'm a co-founder of Appiko, an early stage start-up whose mission is to develop technology for wildlife conservation. I care about sustainability and conservation of the environment. I am proficient with embedded systems and lean iterative development cycle of designing, prototyping and testing for mass manufacturing.}% \textbf{TODO based on application}}                 % optional, remove the line if not wanted
+\quote{I'm a co-founder of Appiko, an early stage start-up whose mission is to develop technology for wildlife conservation. I care about sustainability and conservation of the environment. I am proficient with embedded systems and lean iterative development cycle of designing, prototyping and testing for mass manufacturing electronic devices.}% \textbf{TODO based on application}}                 % optional, remove the line if not wanted
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
@@ -84,64 +83,36 @@
 \maketitle
 
 %Section
-\section{\textbf{Skills}} 
-\subsection{Hardware}
-\cvcomputer{PCB Design}{Eagle, KiCad} {Electronics}{Circuit Design \tab{\rightRatingIndent}{\large \textcolor{color1}{•••••}}
-	\newline Digital Design \tab{\rightRatingIndent}{\large \textcolor{color1}{••••}\textcolor{lightgreen}{•}}
-	\newline Analog Design \tab{\rightRatingIndent}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}}
-\vspace{-15px}
-\cvcomputer{Hands-On}{SMD soldering, analog \& digital debugging} {}{}
-\subsection{Software}
-
-\cvcomputer{Languages}{C, Embedded-C \tab{\leftRatingIndent}{\large \textcolor{color1}{•••••}}
-	 \newline Python, bash scripting, C++ \tab{\leftRatingIndent}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}
-	 \newline HTML, Java, C\#, Assembly \tab{\leftRatingIndent}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}} 
-	{Protocols}{BLE, I2C, UART, SPI \tab{\rightRatingIndent}{\large \textcolor{color1}{•••••}}
-	 \newline CAN, Ethernet \tab{\rightRatingIndent}{\large \textcolor{color1}{•••}\textcolor{lightgreen}{••}}
-	 \newline USB, 6LowPAN \tab{\rightRatingIndent}{\large \textcolor{color1}{••}\textcolor{lightgreen}{•••}}}
-
-\cvcomputer{Tools}{Eclipse, GCC, Keil, IAR, Android Studio, Git, Doxygen, \LaTeX}  {Know-how}{$\mu$C optimized coding, sensor/actuator interfacing, power optimization, algorithm to embedded firmware development }
-
-%Section
 
 \section{\textbf{Experience}}
 \subsection{Working}
 
-\cventry{Oct 2017 -- present}{Co-founder}{\href{https://appiko.org/}{Appiko}}{Bengaluru}{}{Appiko’s mission is to develop technology that helps the wildlife conservation community. In our quest to create low-cost, low-power, modular hardware and software components  we have started off with SensePi and SenseBe. Both are low-power, app-controlled motion sensors with SensePi detecting body heat and SenseBe detecting a break in a beam of infrared light. As a co-founder I've to keep track of Appiko's big picture  while making sure that the day to day firefighting activities are progressing well. }
+\cventry{Oct 2017 -- present}{Co-founder}{\href{https://appiko.org/}{Appiko}}{Bengaluru}{}{As a founder I've to keep track of Appiko's big picture while managing of the day to day firefighting activities. I've lead and taken part in the development and manufacturing of long-range animal warning systems and low-power low-cost app-controlled camera trapping equipment. }
 
-\cventry{Aug 2015 -- Jan 2017}{Embedded Engineer}{\href{http://lofelt.com/}{Lofelt}}{Berlin}{}{I was part of the small engineering team that made Basslet a reality, from a spaghetti of wires connecting dev boards to an on-time delivered Kickstarter product in just over a year. Basslet is a bracelet that lets you feel the bass in music. It's essentially a wearable sub-woofer. My responsibilities were designing the electronics at the schematic level and firmware development. Particularly I worked on the design of the low-latency, low-power streaming protocol, overall firmware architecture development, User Experience (UX) implementation, power optimization and in-factory test routine development.}
+\cventry{Aug 2015 -- Jan 2017}{Embedded Engineer}{\href{http://lofelt.com/}{Lofelt}}{Berlin}{}{Firmware \& factory test routine development during the entire product development lifecycle of Basslet.}
 
-\cventry{Nov 2014 -- Apr 2015}{Firmware Engineer}{\href{http://bluvision.com/}{BluVision}}{Berlin}{}{I mainly worked developing firmware for the CC2650 Chip, which drives the Bluetooth Low Energy (BLE) Beacons by BluVision. Specifically, I interfaced a light and motion detection sensors, developed the complete Host Controller Interface (HCI) layer and developed firmware for customer specific applications. I also developed Android apps to configure beacons and log advertisements.  I've got an idea of Design for Manufacturing (DFM) in both hardware and software, with experience in a factory in China. Finally, It was a good experience learning the do's and don'ts when managing a start-up. } % arguments 3 to 6 are optional
+\cventry{Nov 2014 -- Apr 2015}{Firmware Engineer}{\href{http://bluvision.com/}{BluVision}}{Berlin}{}{Firmware and Android app development engineer for Bluetooth beacons. } % arguments 3 to 6 are optional
 
-\cventry{Oct 2011 - Jul 2012}{Research Assistant - Wildlife Researchers' Gadgets Maker}{\newline \href{http://www.dese.iisc.ernet.in/}{Department of Electronic Systems Engineering}, Indian Institute of Science}{Bangalore}{}{Being the project assistant for Dr. André Pittet I was involved in the complete product design cycle of fabricating gadgets such as camera traps and animal collars for wildlife researchers, which had specific requirements such as low cost, ruggedness and weeks of battery life. My tasks included features decision, design, implementation and testing of the enclosure (3D modelling), electronics (PCB schematics, routing and soldering) and software (embedded software, windows PC application, android application).} % arguments 3 to 6 are optional
-
-\subsection{Academic}
-\cventry{Jan 2014 -- Sep 2014}{Master Thesis - Comparison of link layer of BLE and 802.15.4}{\newline \href{https://www.sics.se/groups/networked-embedded-systems-group-nes}{Swedish Institute of Computer Science}}{Stockholm}{}{The objective of my thesis was first to port Contiki OS and Bluetooth Low Energy (BLE) Protocol to a SoC platform that supports BLE and secondly to compare various performance criteria such as data rate, latency, and energy consumption with 802.15.4 based MAC layers (ContikiMAC and Null-RDC). A demo of the Contiki port was also showcased. } % arguments 3 to 6 are optional
-
-\cventry{Sep 2013 -- Jan 2014}{Member, MicroGrid Project 2013}{\href{https://tta-portal.misc.kth.se/microgrid}{Technology Transfer Alliance}}{KTH}{Stockholm}{In this project we designed a 2nd generation a MicroGrid network intended to create a local power network in rural and remote regions. This network consisted of a central server managing an efficient MicroGrid of distributed DC-DC converters nodes with CoAP messages. The function of these node units running on Contiki-OS was to keep the voltage steady within the central grid while using heterogeneous power sources such as solar energy, batteries and super-capacitors.}
+\cventry{Oct 2011 - Jul 2012}{Research Assistant}{\href{http://www.dese.iisc.ernet.in/}{DESE}, Indian Institute of Science}{Bengaluru}{}{Being the project assistant of Dr. André Pittet I was involved in the complete product design cycle of fabricating gadgets such as camera traps and animal collars for wildlife researchers.} % arguments 3 to 6 are optional
 
 \subsection{Projects}
-\cventry{Aug 2010 -- June 2011}{Team Leader}{\href{http://www.teamstudsat.in/}{Project STUDSAT-2}}{Bangalore}{}{STUDSAT-2 is the 2\textsuperscript{nd} generation satellite project by students from many colleges across India. As team leader of STUDSAT-2, I had both technical and management roles. My major tasks included conducting management meets, recruiting students, preparing the project timeline and presenting in various organizations to raise funds for the project. My technical work was focused on the use of Real Time Operating System's (FREE-RTOS) features for satellite applications and developing a prototype of the checkout system. In addition, I led the process of analyzing and selecting the payload and core controller for the satellite and interfacing the on and off-chip peripherals.}
+\cventry{Jan 2014 -- Sep 2014}{Master Thesis}{ \href{https://www.sics.se/groups/networked-embedded-systems-group-nes}{Swedish Institute of Computer Science}}{Stockholm}{}{Comparison of BLE and 802.15.4's data rate, latency, reliability and energy consumption.} % arguments 3 to 6 are optional
 
-\cventry{Feb 2009 -- June 2010}{Team Member}{\href{http://www.teamstudsat.in/}{Project STUDSAT-1}}{Bangalore}{}{In this project, I developed the electronics and software for the CMOS camera payload for this nano-satellite, using a 0.3 Mega-Pixel Monochrome Kodak sensor to take images of 95 m resolution. I also was part of the team that developed a simple scheduler based Operating System for the satellite.} % arguments 3 to 6 are optional
+\cventry{Feb 2009 -- June 2011}{Team Member/Leader}{\href{https://www.isro.gov.in/Spacecraft/studsat-1}{Project STUDSAT-1/2}}{Bengaluru}{}{In STUDSAT-1, India's first student pico-satellite, I developed the electronics and software for the camera payload and lead the entire 25+ people team in the STUDSAT-2 for a year.} % arguments 3 to 6 are optional
+
+\subsection{Publications}
+\cventry{Oct 2015}{\href{http://www.simonduquennoy.net/papers/narendra15ble.pdf}{BLE \& IEEE 802.15.4 in the IoT: Evaluation \& Interoperability Considerations}}{Proceedings of the International Conference on Interoperability in IoT (EAI InterIoT 2015)}{}{}{} % arguments 3 to 6 are optional
+
 
 %Section
 \section{\textbf{Education}}
-\cventry{Sep 2012 -- Sep 2014}{\href{http://www.masterschool.eitictlabs.eu/}{Masters in EIT ICT Labs Master School}}{}{\newline Major in \emph{\href{http://www.masterschool.eitictlabs.eu/programmes/es/}{Embedded Systems}}, Minor in \emph{\href{http://www.masterschool.eitictlabs.eu/programmes/minor/}{Innovation and Entrepreneurship}}}{}{Year 1: \emph{\href{http://tue.nl/}{Technische Universiteit Eindhoven}}, Eindhoven, Netherlands\newline Year 2: \emph{\href{https://www.kth.se/en}{KTH Royal Institute of Technology}}, Stockholm, Sweden} % arguments 3 to 6 are optional
+\cventry{Sep 2012 -- Sep 2014}{\href{http://www.masterschool.eitictlabs.eu/}{Masters in EIT Digital Master School}}{}{\newline Major in \emph{\href{http://www.masterschool.eitictlabs.eu/programmes/es/}{Embedded Systems}}, Minor in \emph{\href{http://www.masterschool.eitictlabs.eu/programmes/minor/}{Innovation and Entrepreneurship}}}{}{Year 1: \emph{\href{http://tue.nl/}{Technische Universiteit Eindhoven}}, Eindhoven; Year 2: \emph{\href{https://www.kth.se/en}{Royal Institute of Technology}}, Stockholm} % arguments 3 to 6 are optional
 
-\cventry{Sep 2007 -- May 2011}{Bachelors in Electronics and Communication}{\href{http://rvce.edu.in/}{RV College of Engineering}}{Banglaore}{}{Best Outgoing Student Award from the Electronics \& Communication Dept. for the 2007-11 batch.} % arguments 3 to 6 are optional
+\cventry{Sep 2007 -- May 2011}{Bachelors in Electronics and Communication}{\href{http://rvce.edu.in/}{RV College of Engineering}}{Bengaluru}{}{Best Outgoing Student Award from the Electronics \& Communication Dept. for the 2007-11 batch.} % arguments 3 to 6 are optional
 
 %Section
 \section{\textbf{Additional Experience/Volunteer}}
-\cventry{Mar 2017 -- Aug 2017}{Driving Force}{\href{embeddedforher.com}{Embedded for Her program}}{}{}{Embedded for Her is a skill development program in the field of embedded systems for women to increase the gender diversity in this domain. As a volunteer at FSMK, I lead this program full-time. I handled all aspects of the program with assistance from the other volunteers. }
-
-
-\cventry{Feb 2015 -- Nov 2015}{Event Officer}{\href{http://alumni.eitictlabs.eu/}{EIT ICT Labs Alumni Board}}{}{}{Primary task of facilitating and supporting the creation of events by the Alumni and current students.}
-
-\cventry{Sep 2009 -- May   2010}{Secretary}{IEEE RVCE Chapter}{}{}{Apart from being the secretary, I organized paper presentations and robotics workshops.}
-
-\cventry{}{Volunteer/Member}{Miscellaneous groups and organizations}{}{}{Was secretary at \href{https://www.gewis.nl/~scifi/}{SCIFI}, TU Eindhoven for 6 months; volunteered for 8 months at an NGO to help children at a school for visually impaired; organized many events in a student group called `Geekopreneurs' in KTH for 6 months.}
-
+\cventry{Mar 2017 -- Aug 2017}{Driving Force}{\href{embeddedforher.com}{Embedded for Her program}}{}{}{Embedded for Her is a skill development program in the field of embedded systems for women to increase gender diversity in this domain. I lead this program full-time with volunteers from \href{fsmk.org}{FSMK}. }
 
 %Section
 \section{\textbf{Further Info}}
